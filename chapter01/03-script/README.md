@@ -1,0 +1,1 @@
+执行脚本：cmake -P script.cmake
