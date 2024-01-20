@@ -2,9 +2,11 @@ cmake_minimum_required(VERSION 3.2O.0)
 
 set(myList "a;list;of;five;elements")
 # 通过传递一个不加引号的 myList 引用，可以有效地向指令传递更多的参数 :
-message("the list is:" ${myList})
+message("the list is:" ${myList}) # the list is:alistoffiveelements
+message("the list is: ${myList}") # the list is: a;list;of;five;elements
 set(myList2 a list "of;five;elements")
-message("the list is:" ${myList2})
+message("the list is:" ${myList2}) # the list is:alistoffiveelements
+message("the list is: ${myList2}") # the list is: a;list;of;five;elements
 
 # list() 指令
 # 创建一个列表 letters
