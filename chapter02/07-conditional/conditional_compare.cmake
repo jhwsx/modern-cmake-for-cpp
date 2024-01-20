@@ -1,6 +1,18 @@
 cmake_minimum_required(VERSION 3.24)
 
 message("Comparisons:")
+set(CMAKE_SYSTEM_NAME "Linux")
+message(STATUS "CMAKE_SYSTEM_NAME: ${CMAKE_SYSTEM_NAME}")
+if (CMAKE_SYSTEM_NAME MATCHES "Linux")
+  message(STATUS "current system: Linux")
+elseif (CMAKE_SYSTEM_NAME MATCHES "Windows")
+  message(STATUS "current system: Windows")
+elseif (CMAKE_SYSTEM_NAME MATCHES "MacOS")
+  message(STATUS "current system: MacOS")
+else()
+  message(STATUS "other system: ${CMAKE_SYSTEM_NAME}")
+endif()
+
 # 比较数值
 if (1 LESS 2)
   message(STATUS "1 < 2 is correct")
