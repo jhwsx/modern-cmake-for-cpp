@@ -1,0 +1,1 @@
+[CMake语法—宏和函数（macro vs function）](https://www.cnblogs.com/Braveliu/p/15621973.html)
