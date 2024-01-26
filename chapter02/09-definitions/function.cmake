@@ -28,5 +28,5 @@ Line: 3
 FirstArg: Value1
 FirstArg again: new value
 ARGV0: Value1 ARGV1: Value2 ARGC: 2
-FirstArg in global scope: first valuealue
+FirstArg in global scope: first value
 ]=]
